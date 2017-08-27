@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>American Family Insurance</title>
+		<style>
+			body {
+				font-family: arial, helvetica, sans-serif;
+			}
+			h1 {
+				font-family: arial;
+				font-size: x-large;
+				color: #004876;
+			}
+			p {
+				font-family: arial;
+				font-size: small;
+			}
+		</style>
+	</head>
+	<body>
+	<img src="https://www.amfam.com/-/media/images/amfam/american-family-insurance-logo.png"></img>
+	<link href="external/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<div style="width: 300px; margin: 0 auto; text-align: center;">
+		<p>
+			<span class="fa-stack fa-lg" style="font-size: 100px; color: #FFF;">
+			<i class="fa fa-cloud fa-stack-2x" style="color: #9FD4C9;"></i>
+			<i class="fa fa-ban fa-stack-1x"></i>
+			</span>
+		</p>
+		<h1>Oops! Access Blocked</h1>
+		<p>The page you are looking for has been blocked. Please contact your network administrator.</p>
+		<p><b>URL:</b> {$smarty.get.url|escape}<br />
+		<b>Category:</b> {$smarty.get.category|escape}<br />
+		<b>Reputation:</b> {$smarty.get.reputation|escape}<br />
+		<b>User (IP address):</b> {$smarty.get.user|escape}<br />
+		<i>WebCC content filtering</i></p>
+		</div>
+	</body>
+</html>
